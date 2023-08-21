@@ -27,7 +27,7 @@ body{
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -37,9 +37,16 @@ body{
 
 .navegacion-principal{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 .navegacion-principal a{
     padding: 1rem;
@@ -54,4 +61,5 @@ body{
     color: var(--oscuro);
 }
 
+  
  
