@@ -37,6 +37,21 @@ body{
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .boton{
+     width: auto;
+    }
+ }
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(120,120,120,0.68);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(120,120,120,0.68);
+    box-shadow: 0px 5px 15px 0px rgba(120,120,120,0.68);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 /* tipografia */
 h1{
     font-size: 3.8rem;   
@@ -61,12 +76,6 @@ h1,h2,h3 {
     margin: 0 auto;
 }
 
-
-@media (min-width: 768px) {
-   .boton{
-    width: auto;
-   }
-}
 /* navegacion principal */
 .nav-bg{
     background-color: var(--secundario);
@@ -104,6 +113,7 @@ h1,h2,h3 {
     background-repeat: no-repeat;
     height: 45rem;   
     position: relative;
+    margin-bottom: 2rem;
 }
 .contenido-hero{
     background-color: rgba(0,0,0,.5); /**opacidad **/
@@ -123,6 +133,14 @@ h1,h2,h3 {
     align-items: center;
 }
 
-
-  
+.iconos{
+    display: inline-block;
+    background-color: var(--primario);
+    border-radius: 50%;
+    padding: 2rem;
+}
  
+/**Servicios**/
+.servicios{
+    display: grid;
+} 
